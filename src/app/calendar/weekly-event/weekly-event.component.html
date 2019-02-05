@@ -1,0 +1,34 @@
+<div class="col-xs-12 weekly-event fill-div" (click)="modalToggle()" [ngClass]="{'monday-bg': mondayActive, 'tuesday-bg': tuesdayActive, 'wednesday-bg': wednesdayActive, 'thursday-bg': thursdayActive, 'friday-bg': fridayActive, 'saturday-bg': saturdayActive, 'sunday-bg': sundayActive }"> 
+
+
+  <div class="overlay" *ngIf="isActive"></div>
+
+  <div class="wrapper">
+    <p [ngClass]="{'show': isActive}">{{calText}}</p>
+  </div>
+
+</div>
+
+<div class="event-modal" id="eventModal" [ngClass]="{active: modalActive}" *ngIf="modalActive">
+
+  <div class="event-modal-header col-xs-12">{{eventName | uppercase}}</div>
+
+  <div class="row">
+  <div class="img-container col-xs-12">
+      <img src="{{eventImage}}" class="event-modal-image" />
+  </div>
+  </div>
+
+  <div class="event-text col-xs-10 col-xs-offset-1">
+  <span>{{eventText}}</span>
+  <br>
+  <br>
+  <span>When: </span>{{whenText}}
+  <br>
+  <br>
+  <span>Where: </span>{{locationText}}
+  </div>
+
+  <div class="close-modal-button col-xs-12" (click)="modalToggle()">CLOSE</div>
+
+</div>

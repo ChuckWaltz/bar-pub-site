@@ -1,0 +1,157 @@
+.weekly-event {
+    font-family: 'Fira Sans', sans-serif;
+    width: 14.28571428571429%;
+    border: 0.1vmin solid rgb(175, 175, 175);
+    border-top: none;
+    border-left: none;
+    height: 4vw;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.weekly-event .wrapper > p {
+    width: 100%;
+    padding: 10px 10px 3px 0px;
+    font-size: 1vw;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+    display: none;
+    margin-left: 4px;
+}
+
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.weekly-event:hover{
+    background-color: rgba(155, 155, 155, 0.5);
+    cursor: pointer;
+}
+
+.weekly-event:hover time{
+    color: yellow;
+}
+
+.weekly-event:hover .overlay{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.day-label > time {
+    font-size: 4vmin;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.monday-bg{
+    background-image: url(../../../assets/images/nog_run.jpg);
+}
+
+.tuesday-bg{
+
+}
+
+.wednesday-bg{
+    background-image: url(../../../assets/images/growler_weds.gif);
+}
+
+.thursday-bg{
+
+}
+
+.friday-bg{
+
+}
+
+.saturday-bg{
+
+}
+
+.sunday-bg{
+
+}
+
+.overlay{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+
+.event-modal{
+    opacity: 0;
+    text-align: center;
+    top: 20%;
+    color: #333;
+    background-color: white;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 30vw;
+    z-index: 2000;
+    border-radius: 15px;
+}
+
+.active{
+    opacity: 1;
+}
+
+.event-modal button:hover{
+    cursor: pointer;
+}
+
+.close-modal-button{
+    background-color: #d9ab27;
+    color: white;
+    padding: 0.5vh;
+    border-radius: 10px;
+}
+
+.close-modal-button:hover{
+    cursor: pointer;
+    color: black;
+
+}
+
+.event-modal-header{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 900;
+    padding: 25px;
+}
+
+.event-text{
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.event-modal-image{
+    width: 100%;
+}
+
+span{
+    font-weight: 900;
+}
+
+@media (max-width: 767px){
+    .event-modal{
+        margin-left: 55px;
+    }
+}

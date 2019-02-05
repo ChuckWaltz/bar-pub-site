@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Seaweed+Script');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.fill-screen{
+    background-size: cover;
+    background-position: center;
+}
+
+.fill-screen-half{
+    background-size: cover;
+    background-position: top;
+}
+
+.fill-screen-left{
+    background-size: cover;
+    background-position: 25% 50%;
+}
+
+.fill-screen-right{
+    background-size: cover;
+    background-position: 70% 50%;
+}
+
+.fill-div{
+    background-size: cover;
+    background-position: center;
+}
+
+.fill-div-left{
+    background-size: cover;
+    background-position: left;
+}
+
+.fill-div-right{
+    background-size: cover;
+    background-position: right;
+}
+
+.fill-div-top{
+    background-size: cover;
+    background-position: center;
+}
+
+.fixed-image{
+    background-attachment: fixed;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.white-divider{
+    height: 12px;
+}

@@ -1,0 +1,73 @@
+.menu-container{
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.food-menu{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.food-menu img{
+
+    width: 90vw;
+    max-width: 1000px;
+    
+    
+    -webkit-transition: max-width 0.5s; /* Safari */
+    transition: max-width 0.5s;
+}
+
+.food-menu img:hover{
+}
+
+.menu-1{
+}
+
+.menu-2{
+    padding-bottom: 6vh;
+}
+
+h1{
+   font-family: 'Seaweed Script', cursive;
+   font-size: 86px;
+   color: white;
+   padding-top: 2vh;
+}
+
+.floater{
+    position: absolute;
+    top: 5vh;
+    left: -30vw;
+}
+
+.floater img{
+    width: 40vmax;
+}
+
+.floater-1{
+    top: 100vh;
+}
+
+.floater-2{
+    top: 150vh;
+}
+
+.floater-3{
+    right: -150vw;
+    top: 375vh;
+}
+
+.active img{
+    max-width: 1600px;
+}
+
+@media screen and (max-width:1199.98px) {
+
+    h1{
+        font-size: 72px;
+    }
+
+}

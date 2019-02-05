@@ -1,0 +1,82 @@
+h1.title {
+    font-size: 72px;
+    font-weight: 900;
+    font-style: italic;
+    color: #d9ab27;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0;
+    padding-bottom: 2vh;
+    margin: 0;
+    margin-top: 50px;
+
+}
+
+.calendar{
+    padding-bottom: 4vh;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.calendar > .row > .calendar-day {
+    font-family: 'Fira Sans', sans-serif;
+    width: 14.28571428571429%;
+    border: 0.1vmin solid rgb(175, 175, 175);
+    border-top: none;
+    border-left: none;
+}
+.calendar > .row > .calendar-day.calendar-no-current-month {
+    color: rgb(200, 200, 200);
+}
+
+.calendar-day > time {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    left: 0px;
+    font-size: 3vmin;
+    width: 100%;
+    padding: 10px 10px 3px 0px;
+    text-align: right;
+    font-family: 'Seaweed Script', cursive;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.75);
+    
+}
+
+.calendar-day {
+    color: white;
+    font-size: 3vh;
+    height: 6vw;
+    background-color: rgba(0,0,0,0.75);
+    font-family: 'Fira Sans', sans-serif;
+    width: 14.28571428571429%;
+    border: 0.1vmin solid rgb(175, 175, 175);
+    border-top: none;
+    border-left: none;
+    background-position: center 0;
+    max-height: 200px;
+}
+
+.calendar-day:hover{
+    background-color: rgba(155, 155, 155, 0.5);
+}
+
+.day-label > time {
+    font-size: 4vmin;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.calendar-holder{
+    background-attachment: fixed;
+}
+
+.weekly-events-header{
+    position: absolute;
+    color: #d9ab27;
+    font-size: 2vw;
+    z-index: 1;
+    font-family: 'Seaweed Script', cursive;
+    margin-top: 3vw;
+    margin-left: -4vw;
+}

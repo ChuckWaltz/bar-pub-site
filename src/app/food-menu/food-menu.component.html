@@ -1,0 +1,26 @@
+<a name="foodmenu"></a>
+
+<div class="row menu-container fill-div" style="background-image: url(assets/images/rbg_taps_2.jpg);">
+
+    <h1 class="wow bounceIn">Food Menu</h1>
+    
+    <div class="food-menu menu-1 wow bounceInLeft" [ngClass]="{'active': active }">
+      <img src="../../assets/images/food-menu-1.jpg" (click)="toggleActive()">
+    </div>
+    <div class="food-menu menu-2 wow bounceInRight" [ngClass]="{'active': active2 }">
+      <img src="../../assets/images/food-menu-2.jpg" (click)="toggleActive2()">
+    </div>
+
+
+  <!-- <div class="floater floater-1" data-scroll-speed="3">
+    <img src="../../assets/images/food-menu-1.jpg">
+  </div>
+  <div class="floater floater-2">
+    <img src="../../assets/images/food-menu-2.jpg" data-scroll-speed="5">
+  </div>
+
+  <div class="floater floater-3">
+    <img src="../../assets/images/food-menu-2.jpg" data-scroll-speed="1">
+  </div> -->
+
+</div>

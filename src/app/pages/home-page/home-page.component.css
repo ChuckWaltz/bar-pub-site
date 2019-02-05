@@ -1,0 +1,271 @@
+#beerIcon{
+    color: rgba(255, 255, 255, 0.514);
+    padding-top: 18vh;
+    font-size: 17vh;
+
+    -webkit-transition: font-size 0.25s, padding-top 0.25s; /* Safari */
+    transition: font-size 0.25s, padding-top 0.25s;
+}
+
+#beerIcon:hover{
+    font-size: 22vh;
+    padding-top: 16vh;
+}
+
+#cutleryIcon{
+    color: rgba(255, 255, 255, 0.514);
+    padding-top: 18vh;
+    font-size: 17vh;
+
+    -webkit-transition: font-size 0.25s, padding-top 0.25s; /* Safari */
+    transition: font-size 0.25s, padding-top 0.25s;
+}
+
+#cutleryIcon:hover{
+    font-size: 22vh;
+    padding-top: 16vh;
+}
+
+#top-img{
+    box-shadow: 0px 10px 60px black;
+}
+
+
+
+.secondary-category{
+    height: 50vh;
+}
+
+#chevron-down-arrow{
+    padding-top: 89vh;
+    padding-left: 2vh;
+    bottom: 1.5vh;
+    font-size: 7vh;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.text-box{
+    background-color: rgba(0, 0, 0, 0.233);
+    border-radius: 15px;
+}
+
+.cat-section{
+    opacity: 1;
+}
+
+.cat-section:hover{
+    opacity: 0.75;
+}
+
+#bottom-carousel{
+}
+
+.carousel-inner{
+    height: 30vh;
+}
+
+.img-responsive{
+    width: 100vw;
+    
+}
+
+.videoBG{
+    width: 100vw;
+}
+
+.icon-prev{
+    font-size: 10vh;
+    margin-top: -4vh;
+}
+
+.icon-next{
+    font-size: 10vh;
+    margin-top: -4vh;
+}
+
+.carousel-overlay{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 0;
+    margin-top: 6vh;
+    padding: 2vh;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+
+}
+
+.carousel-overlay h4{
+    font-size: 3vh;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.carousel-overlay p{
+    font-size: 1.5vh;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.carouselImage{
+    opacity: 1;
+}
+
+.carousel-button{
+    background-color: white;
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+    padding: 0.25vmin 2vmin;
+    border-radius: 15vmin;
+    border: none;
+    color: black;
+    font-size: 2.25vh;
+    font-family: 'Seaweed Script', cursive;
+    outline: none;
+}
+
+.cbp-af-header-shrink{
+    top: 0;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.25);
+
+}
+
+.top-logo {
+    text-align: center;
+}
+
+.top-logo a img{
+    opacity: 1 !important;
+    width: 100%;
+    max-width: 40vh;
+    margin-top: 30vh;
+
+    -webkit-transition: height 0.5s, margin 0.5s; /* Safari */
+    transition: height 0.5s, margin 0.5s;
+    
+}
+
+.header-byline{
+    color: white;
+    text-align: center;
+    font-size: 4vh;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
+
+}
+
+.header-subtext{
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Seaweed Script', cursive;
+
+}
+
+.header-content{
+    margin-top: 4vh;
+    padding: 0;
+}
+
+.on-tap-button{
+    margin-top: 2vh;
+}
+
+.on-tap-button button{
+    background-color: #d9ab27;
+    border: none;
+    font-size: 2.25vh;
+    padding: 0.5em;
+    border-radius: 0.1em;
+    font-weight: 900;
+    color: rgb(35, 35, 35);
+    font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
+
+}
+
+.on-tap-button button:hover{
+    color:white;
+    background-color: #f1bd2c;
+
+}
+
+.on-tap-button a:hover{
+    text-decoration: none;
+
+}
+
+.beer-disclaimer{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    padding-bottom: 4.25vh;
+    text-align: center;
+}
+
+.carousel-header{
+    text-align: center;
+    font-size: 6vh;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    padding: 0.5vh;
+    border-top: 0.75vh solid #333;
+    border-bottom: 0.75vh solid #333;
+}
+
+.container {
+    width:1600vw;
+}
+
+.marquee{
+    display: block;
+    position:relative;
+    animation:scroll 100s linear infinite;
+
+}
+
+.marquee-back{
+    display: block;
+    position:relative;
+    animation:scrollback 100s linear infinite;
+
+}
+
+.img1 {
+width:550px;
+height:300px;
+background-color:#dddddd;
+margin:5px;
+float:left;
+}
+
+.image-gallery{
+    padding: 5px;
+}
+
+/* Make it move */
+@keyframes scroll{
+0% {left:0vw;}
+100% {left:-500vw;}
+}
+
+@keyframes scrollback{
+    0% {left:-500vw;}
+    100% {left:0vw;}
+    }
+
+@media screen and (max-width:813px) {
+
+    .top-logo a img{
+        margin-top: 30vh;
+    }
+    
+    .beer-disclaimer{
+        font-size: 18px;
+        padding-bottom: 6vh;
+    }
+
+}
