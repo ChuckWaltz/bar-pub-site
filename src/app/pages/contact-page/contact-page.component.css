@@ -1,79 +1,72 @@
-.contact-container{}
-
-.contact-section{
-    color: white;
-    text-align: center;
-    font-family: "Seaweed Script", cursive;
-    padding: 1vh;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    background-color: rgba(0, 0, 0, 0.65);
-    position: relative;
+.contact-section {
+  color: white;
+  text-align: center;
+  font-family: "Seaweed Script", cursive;
+  padding: 1vh;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: relative;
 }
 
-.contact-section h1{
-    font-size: 48px;
-    text-decoration: underline;
-    padding-bottom: 2vh;
+.contact-section h1 {
+  font-size: 48px;
+  text-decoration: underline;
+  padding-bottom: 2vh;
 }
 
-.contact-section h2{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 32px;
+.contact-section h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 32px;
 }
 
-.contact-section h3{
-    font-size: 32px;
-    font-family: 'Fira Sans', sans-serif;
+.contact-section h3 {
+  font-size: 32px;
+  font-family: "Fira Sans", sans-serif;
 }
 
-.contact-text{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 24px;
-    padding: 1.5vmax;
+.contact-text {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  padding: 1.5vmax;
 }
 
-.image-floater-left{
-
-    position: absolute;
-    left: 1vw;
-    top: 6vh;
-    padding: 10px;
-    margin: 2vh;
-    background-color: white;
-    border-radius: 0.25vh;
-    max-width: 30vw;
-
+.image-floater-left {
+  position: absolute;
+  left: 1vw;
+  top: 6vh;
+  padding: 10px;
+  margin: 2vh;
+  background-color: white;
+  border-radius: 0.25vh;
+  max-width: 30vw;
 }
-.image-floater-right{
-    
-    position: absolute;
-    right: 1vw;
-    top: 20vh;
-    padding: 10px;
-    background-color: white;
-    border-radius: 0.25vh;
-    margin: 2vh;
+.image-floater-right {
+  position: absolute;
+  right: 1vw;
+  top: 20vh;
+  padding: 10px;
+  background-color: white;
+  border-radius: 0.25vh;
+  margin: 2vh;
 }
 
-@media screen and (max-width:1199.98px) {
+@media screen and (max-width: 1199.98px) {
+  .contact-section h1 {
+    font-size: 4vmax;
+  }
 
-    .contact-section h1{
-        font-size: 4vmax;
-    }
+  .contact-section h2 {
+    font-size: 3vmax;
+  }
 
-    .contact-section h2{
-        font-size: 3vmax;
-    }
+  .contact-section h3 {
+    font-size: 3vmax;
+  }
 
-    .contact-section h3{
-        font-size: 3vmax;
-    }
-
-    .contact-text{
-        font-size: 2.5vmax;
-    }
-
+  .contact-text {
+    font-size: 2.5vmax;
+  }
 }
