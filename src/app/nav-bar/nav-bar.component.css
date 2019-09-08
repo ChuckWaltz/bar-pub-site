@@ -1,89 +1,79 @@
-.navbar{
-    
-    width: 100%;
-    padding: 0;
-    transition: 0.25s;
-    background-color: rgba(0,0,0,0);
-    border-color: rgba(0,0,0,0);
-    font-family: 'Seaweed Script', cursive;
-    
+.navbar {
+  width: 100%;
+  padding: 0;
+  transition: 0.25s;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  font-family: "Seaweed Script", cursive;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-    
-    color: white;
-    font-size: 38px;
-    padding: 20px;
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  font-size: 38px;
+  padding: 20px;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
-    text-decoration: overline;
+.navbar-inverse .navbar-nav > li > a:hover {
+  text-decoration: overline;
 }
 
-.nav{
-    margin-top: 6em;
-    margin-right: 1em;
+.nav {
+  margin-top: 3em;
+  margin-right: 1em;
 
-    transition: 0.25s;
+  transition: 0.25s;
 }
 
-.cbp-af-header-shrink{
-    top: 0;
-    opacity: 1;
-    background-color: rgba(0,0,0,0.5);
-
+.cbp-af-header-shrink {
+  top: 0;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.cbp-af-header-shrink .nav{
-    margin-top: 0.75em;
+.cbp-af-header-shrink .nav {
+  margin-top: 0.75em;
 }
 
-.cbp-af-header-shrink .top-logo a img{
-
-    height: 6vh;
-    margin: 0.5vw;
-
+.cbp-af-header-shrink .top-logo a img {
+  height: 6vh;
+  margin: 0.5vw;
 }
 
 .top-logo {
-    text-align: center;
+  text-align: center;
 }
 
-.top-logo a img{
-    opacity: 1 !important;
-    height: 30vmin;
-    margin-top: 30vh;
+.top-logo a img {
+  opacity: 1 !important;
+  height: 30vmin;
+  margin-top: 30vh;
 
-    -webkit-transition: height 0.5s, margin 0.5s; /* Safari */
-    transition: height 0.5s, margin 0.5s;
-    
+  -webkit-transition: height 0.5s, margin 0.5s; /* Safari */
+  transition: height 0.5s, margin 0.5s;
 }
 
-@media screen and (max-width:1199.98px) {
-    .top-logo a img{
-        opacity: 0 !important;
-        margin: 0px;
-        padding: 0px;
-        
-    }
+@media screen and (max-width: 1199.98px) {
+  .top-logo a img {
+    opacity: 0 !important;
+    margin: 0px;
+    padding: 0px;
+  }
 
-    .nav{
-        margin-top: 0.75em;
-    }
+  .nav {
+    margin-top: 0.75em;
+  }
 
-    .nav li{
-        display: inline-block;
-    }
+  .nav li {
+    display: inline-block;
+  }
 
-    .navbar{
-        background-color: rgba(0,0,0,0.5); 
-    }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 
-    .navbar-inverse .navbar-nav>li>a {
-    
-        color: white;
-        font-size: 32px;
-        padding: 15px;
-    }
-
+  .navbar-inverse .navbar-nav > li > a {
+    color: white;
+    font-size: 32px;
+    padding: 15px;
+  }
 }
