@@ -16,7 +16,6 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "../node_modules/toastr/build/toastr.min.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/wowjs/css/libs/animate.css",
         "styles.css"
@@ -26,7 +25,6 @@
         "../node_modules/jquery-parallax.js/parallax.min.js",
         "../node_modules/popper.js/dist/umd/popper.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "../node_modules/toastr/build/toastr.min.js",
         "../node_modules/wowjs/dist/wow.min.js",
         "../src/app/common/parallax-scrolling.js",
         "../src/app/common/cbpAnimatedHeader.js",

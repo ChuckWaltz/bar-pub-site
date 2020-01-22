@@ -1,17 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
-import { TapService } from './on-tap.service/on-tap.service'
+import { TapService } from "./on-tap.service/on-tap.service";
 
-import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
-  selector: 'app-on-tap',
-  templateUrl: './on-tap.component.html',
-  styleUrls: ['./on-tap.component.css']
+  selector: "app-on-tap",
+  templateUrl: "./on-tap.component.html",
+  styleUrls: ["./on-tap.component.css"]
 })
 export class OnTapComponent implements OnInit {
-
-  constructor(private tapService: TapService, private route: ActivatedRoute, private router: Router) { }
+  constructor(
+    private tapService: TapService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
   filterActive: boolean = false;
 
@@ -23,48 +26,58 @@ export class OnTapComponent implements OnInit {
 
   subtext: string;
 
-  subcats: Array<string> = ["Pilsners & Lagers", "Kolsch & Blondes", "Ambers & Reds", "Brown Ales", "Porters & Stouts", "Ciders", "Saisons & Farmhouse Ales", "Strong Ales", "Seasonal Beers", "Specialty Beers", "IPAs", "Pale Ales", "Wheat Beers", "Sour & Fruit Beers", "Other", "On Deck", "Meads"];
+  subcats: Array<string> = [
+    "Pilsners & Lagers",
+    "Kolsch & Blondes",
+    "Ambers & Reds",
+    "Brown Ales",
+    "Porters & Stouts",
+    "Ciders",
+    "Saisons & Farmhouse Ales",
+    "Strong Ales",
+    "Seasonal Beers",
+    "Specialty Beers",
+    "IPAs",
+    "Pale Ales",
+    "Wheat Beers",
+    "Sour & Fruit Beers",
+    "Other",
+    "On Deck",
+    "Meads"
+  ];
 
   subcatOpen: boolean = true;
 
   ngOnInit() {
-
-    this.tapService.getItems().subscribe(data =>
-
-      this.allBeers = data
-
-    )
+    this.tapService.getItems().subscribe(data => (this.allBeers = data));
 
     this.clearFilter();
 
-    this.filter = this.route.snapshot.data['activeFilter'];
-    this.subtext = this.route.snapshot.data['subtext'];
+    this.filter = this.route.snapshot.data["activeFilter"];
+    this.subtext = this.route.snapshot.data["subtext"];
 
-    if(this.route.snapshot.data['activeFilter']){
+    if (this.route.snapshot.data["activeFilter"]) {
       this.filterActive = true;
     }
-
   }
 
-  applyFilter(str: string, subtext: string){
+  applyFilter(str: string, subtext: string) {
     this.filter = str;
     this.subtext = subtext;
 
-    if(!this.filterActive){
+    if (!this.filterActive) {
       this.filterActive = true;
-    }else{
+    } else {
       this.filterActive = false;
     }
-
   }
 
-  sizesToggle(){
+  sizesToggle() {
     this.showSizes = !this.showSizes;
   }
 
-  clearFilter(){
+  clearFilter() {
     this.applyFilter("", "");
     this.filterActive = false;
   }
-
 }
