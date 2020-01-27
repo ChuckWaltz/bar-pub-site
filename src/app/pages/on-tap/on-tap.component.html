@@ -1,124 +1,219 @@
 <nav-bar></nav-bar>
 
-<div data-scroll-speed="0" class="fill-div fixed-image col-xs-12 topImg" style="background-image: url(assets/images/bar_taps.jpg);">
+<div
+  data-scroll-speed="0"
+  class="fill-div col-xs-12 topImg parallax-window"
+  data-parallax="scroll"
+  data-speed="0"
+  data-image-src="../../../assets/images/bar_taps.jpg"
+>
   <div class="col-xs-11 col-sm-6 col-lg-4 tap-header">On Tap</div>
 </div>
 
 <div class="row">
-  <div class="fill-div fixed-image col-xs-12" style="background-image: url(assets/images/store-interior-1.png);">
-    
-      <div class="tap-wrapper ">
+  <div
+    class="fill-div col-xs-12 parallax-window"
+    data-parallax="scroll"
+    data-speed="0"
+    data-image-src="../../../assets/images/store-interior-1.png"
+  >
+    <div class="tap-wrapper ">
       <div class="tap-container col-xs-12">
         <div class="tap-container-inner col-xs-12">
-
-              <div class="tap-home" *ngIf="!filterActive">
-
-                <a class="tap-item col-xs-12 col-lg-4" [routerLink]="['/on-tap/first-floor']">
-                  <div class="tap-item-inner col-xs-12  fill-div" style="background-image: url(assets/images/rbg_inside_tree_adjust.jpg);">
-                    <div class="overlay col-xs-12"></div>
-                    <h1>1st Floor</h1>
-                  </div>
-                </a>
-                <a class="tap-item col-xs-12 col-lg-4" [routerLink]="['/on-tap/second-floor']">
-                  <div class="tap-item-inner col-xs-12 fill-div" style="background-image: url(assets/images/carousel-images/bar2.jpg);">
-                    <div class="overlay col-xs-12"></div>
-                    <h1>2nd Floor</h1>
-                  </div>
-                </a>
-                <a class="tap-item col-xs-12 col-lg-4" [routerLink]="['/on-tap/third-floor']">
-                  <div class="tap-item-inner col-xs-12 fill-div" style="background-image: url(assets/images/rbg_rooftop.png);">
-                    <div class="overlay col-xs-12"></div>
-                    <h1>3rd Floor</h1>
-                  </div>
-                </a>
-                <a class="tap-item col-xs-12 col-lg-4" [routerLink]="['/on-tap/new']">
-                  <div class="tap-item-inner col-xs-12 fill-div" style="background-image: url(assets/images/flight1.jpg);">
-                    <div class="overlay col-xs-12"></div>
-                    <h1>What's New</h1>
-                  </div>
-                </a>
-                <a class="tap-item col-xs-12 col-lg-8" [routerLink]="['/on-tap/local']">
-                  <div class="tap-item-inner col-xs-12 fill-div" style="background-image: url(assets/images/raleigh_skyline.jpg);">
-                    <div class="overlay col-xs-12"></div>
-                    <h1>Local Beers</h1>
-                  </div>
-                </a>
-                <a class="tap-item col-xs-12 col-lg-8" [routerLink]="['/on-tap/seasonal']">
-                  <div class="tap-item-inner col-xs-12 fill-div" style="background-image: url(assets/images/seasonals1.jpg); background-position: top;">
-                    <div class="overlay col-xs-12"></div>
-                    <h1>Seasonal Beers</h1>
-                  </div>
-                </a>
-                <a class="tap-item col-xs-12 col-lg-4" [routerLink]="['/on-tap/ipas']">
-                  <div class="tap-item-inner col-xs-12 fill-div" style="background-image: url(assets/images/ipa1.jpg);">
-                    <div class="overlay col-xs-12"></div>
-                    <h1>IPAs</h1>
-                  </div>
-                </a>
-                <a class="tap-item col-xs-12 col-lg-4" [routerLink]="['/on-tap/porters-and-stouts']">
-                  <div class="tap-item-inner col-xs-12 fill-div" style="background-image: url(assets/images/stout1.jpg);">
-                    <div class="overlay col-xs-12"></div>
-                    <h1>Porters &amp; Stouts</h1>
-                  </div>
-                </a>
-                <a class="tap-item col-xs-12 col-lg-8" [routerLink]="['/on-tap/domestic']">
-                  <div class="tap-item-inner col-xs-12 fill-div" style="background-image: url(assets/images/beer1.png); background-position: top;">
-                    <div class="overlay col-xs-12"></div>
-                    <h1>Domestic Beers</h1>
-                  </div>
-                </a>
-
+          <div class="tap-home" *ngIf="!filterActive">
+            <a
+              class="tap-item col-xs-12 col-lg-4"
+              [routerLink]="['/on-tap/first-floor']"
+            >
+              <div
+                class="tap-item-inner col-xs-12  fill-div"
+                style="background-image: url(assets/images/rbg_inside_tree_adjust.jpg);"
+              >
+                <div class="overlay col-xs-12"></div>
+                <h1>1st Floor</h1>
               </div>
+            </a>
+            <a
+              class="tap-item col-xs-12 col-lg-4"
+              [routerLink]="['/on-tap/second-floor']"
+            >
+              <div
+                class="tap-item-inner col-xs-12 fill-div"
+                style="background-image: url(assets/images/carousel-images/bar2.jpg);"
+              >
+                <div class="overlay col-xs-12"></div>
+                <h1>2nd Floor</h1>
+              </div>
+            </a>
+            <a
+              class="tap-item col-xs-12 col-lg-4"
+              [routerLink]="['/on-tap/third-floor']"
+            >
+              <div
+                class="tap-item-inner col-xs-12 fill-div"
+                style="background-image: url(assets/images/rbg_rooftop.png);"
+              >
+                <div class="overlay col-xs-12"></div>
+                <h1>3rd Floor</h1>
+              </div>
+            </a>
+            <a
+              class="tap-item col-xs-12 col-lg-4"
+              [routerLink]="['/on-tap/new']"
+            >
+              <div
+                class="tap-item-inner col-xs-12 fill-div"
+                style="background-image: url(assets/images/flight1.jpg);"
+              >
+                <div class="overlay col-xs-12"></div>
+                <h1>What's New</h1>
+              </div>
+            </a>
+            <a
+              class="tap-item col-xs-12 col-lg-8"
+              [routerLink]="['/on-tap/local']"
+            >
+              <div
+                class="tap-item-inner col-xs-12 fill-div"
+                style="background-image: url(assets/images/raleigh_skyline.jpg);"
+              >
+                <div class="overlay col-xs-12"></div>
+                <h1>Local Beers</h1>
+              </div>
+            </a>
+            <a
+              class="tap-item col-xs-12 col-lg-8"
+              [routerLink]="['/on-tap/seasonal']"
+            >
+              <div
+                class="tap-item-inner col-xs-12 fill-div"
+                style="background-image: url(assets/images/seasonals1.jpg); background-position: top;"
+              >
+                <div class="overlay col-xs-12"></div>
+                <h1>Seasonal Beers</h1>
+              </div>
+            </a>
+            <a
+              class="tap-item col-xs-12 col-lg-4"
+              [routerLink]="['/on-tap/ipas']"
+            >
+              <div
+                class="tap-item-inner col-xs-12 fill-div"
+                style="background-image: url(assets/images/ipa1.jpg);"
+              >
+                <div class="overlay col-xs-12"></div>
+                <h1>IPAs</h1>
+              </div>
+            </a>
+            <a
+              class="tap-item col-xs-12 col-lg-4"
+              [routerLink]="['/on-tap/porters-and-stouts']"
+            >
+              <div
+                class="tap-item-inner col-xs-12 fill-div"
+                style="background-image: url(assets/images/stout1.jpg);"
+              >
+                <div class="overlay col-xs-12"></div>
+                <h1>Porters &amp; Stouts</h1>
+              </div>
+            </a>
+            <a
+              class="tap-item col-xs-12 col-lg-8"
+              [routerLink]="['/on-tap/domestic']"
+            >
+              <div
+                class="tap-item-inner col-xs-12 fill-div"
+                style="background-image: url(assets/images/beer1.png); background-position: top;"
+              >
+                <div class="overlay col-xs-12"></div>
+                <h1>Domestic Beers</h1>
+              </div>
+            </a>
+          </div>
 
-              <div class="tap-filtered" *ngIf="filterActive">
+          <div class="tap-filtered" *ngIf="filterActive">
+            <a class="home-button" [routerLink]="['/on-tap']"
+              ><i class="fa fa-home"></i
+            ></a>
 
-                <a class="home-button" [routerLink] = "['/on-tap']"><i class="fa fa-home"></i></a>
+            <div class="filter-header">{{ filter | uppercase }}</div>
+            <div class="filter-subtext">{{ subtext }}</div>
 
-                <div class="filter-header">{{filter | uppercase}}</div>
-                <div class="filter-subtext">{{subtext}}</div>
+            <div class="sub-categories row" *ngFor="let subcat of subcats">
+              <div class="sub-cat">
+                <!-- Collapsible - uses the built-in slice pipe in angular to get the first 3 characters of the subcat string for the data-target -->
+                <button
+                  data-toggle="collapse"
+                  [attr.data-target]="'#' + subcat | slice: 0:4"
+                >
+                  <h1>{{ subcat }}<i class="fa fa-angle-down"></i></h1>
+                </button>
 
-                <div class="sub-categories row" *ngFor="let subcat of subcats">
+                <div
+                  id="{{ subcat | slice: 0:3 }}"
+                  class="row subcat-container collapse in"
+                >
+                  <div
+                    class="filter-main-container"
+                    *ngFor="let beer of allBeers"
+                  >
+                    <a
+                      class="beer-item col-xs-12 col-md-6 col-lg-3"
+                      *ngIf="
+                        beer.tags.includes(filter) && beer.tags.includes(subcat)
+                      "
+                    >
+                      <img
+                        src="{{ beer.thumbnailUrl }}"
+                        style="margin-right: 5px;"
+                      />
 
-                  <div class="sub-cat">
-                    
-                    <!-- Collapsible - uses the built-in slice pipe in angular to get the first 3 characters of the subcat string for the data-target -->
-                    <button data-toggle="collapse" [attr.data-target]="'#' + subcat | slice:0:4"><h1>{{subcat}}<i class="fa fa-angle-down"></i></h1></button>
-
-                    <div id="{{subcat | slice:0:3}}" class="row subcat-container collapse in">
-                      <div class="filter-main-container" *ngFor="let beer of allBeers">
-                        <a class="beer-item col-xs-12 col-md-6 col-lg-3" *ngIf="beer.tags.includes(filter) && beer.tags.includes(subcat)">
-                          <img src="{{beer.thumbnailUrl}}" style="margin-right: 5px;">
-      
-                          <div class="beer-item-text">
-                            <h1>{{beer.name | uppercase}}</h1>
-                            <h5>{{beer.tags[0]}} - {{beer.tags[1]}}</h5>
-                            <h2>ABV: {{beer.abv}} - IBU: {{beer.ibu}}</h2>
-                            <br>
-                            <h3>{{beer.brewery}}</h3>
-                            <h4>{{beer.location}}</h4>
-                          </div> 
-      
-                          <div class="sizes row" *ngIf="showSizes">
-                            <ul>
-                              <li><p><span style="font-weight: 600">{{beer.sizes[0]}}</span> - {{beer.prices[0]}}</p></li>
-                              <li><p><span style="font-weight: 600">{{beer.sizes[1]}}</span> - {{beer.prices[1]}}</p></li>
-                              <li><p><span style="font-weight: 600">{{beer.sizes[2]}}</span> - {{beer.prices[2]}}</p></li>
-                            </ul>
-                          </div>
-                        </a>
+                      <div class="beer-item-text">
+                        <h1>{{ beer.name | uppercase }}</h1>
+                        <h5>{{ beer.tags[0] }} - {{ beer.tags[1] }}</h5>
+                        <h2>ABV: {{ beer.abv }} - IBU: {{ beer.ibu }}</h2>
+                        <br />
+                        <h3>{{ beer.brewery }}</h3>
+                        <h4>{{ beer.location }}</h4>
                       </div>
-                    </div>
 
+                      <div class="sizes row" *ngIf="showSizes">
+                        <ul>
+                          <li>
+                            <p>
+                              <span style="font-weight: 600">{{
+                                beer.sizes[0]
+                              }}</span>
+                              - {{ beer.prices[0] }}
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span style="font-weight: 600">{{
+                                beer.sizes[1]
+                              }}</span>
+                              - {{ beer.prices[1] }}
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <span style="font-weight: 600">{{
+                                beer.sizes[2]
+                              }}</span>
+                              - {{ beer.prices[2] }}
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </a>
                   </div>
-
                 </div>
-
               </div>
-
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  
   </div>
 </div>
 
