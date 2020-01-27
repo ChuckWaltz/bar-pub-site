@@ -65,9 +65,3 @@ a:hover {
 .white-divider {
   height: 12px;
 }
-
-@supports (overflow: -webkit-marquee) and (justify-content: inherit) {
-  .fixed-image {
-    background-attachment: scroll;
-  }
-}
