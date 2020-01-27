@@ -1,76 +1,123 @@
-<div class="row calendar-holder fill-div" style="background-image: url(assets/images/st-patricks-day.jpg);">
-  
-  <div class="calendar wow fadeInUp hidden-xs hidden-sm hidden-md col-lg-6 col-lg-offset-3" data-toggle="calendar" data-wow-delay="0.35s" data-wow-duration="1s">
-    
-    <h1 class="title text-center">{{calendarTitle}}</h1>
+<div
+  class="row calendar-holder fill-div fixed-image"
+  style="background-image: url(assets/images/st-patricks-day.jpg);"
+>
+  <div
+    class="calendar wow fadeInUp hidden-xs hidden-sm hidden-md col-lg-6 col-lg-offset-3"
+    data-toggle="calendar"
+    data-wow-delay="0.35s"
+    data-wow-duration="1s"
+  >
+    <h1 class="title text-center">{{ calendarTitle }}</h1>
 
     <div class="row">
-        <div class="weekly-events-header hidden-xs col-sm-3">Weekly<br>Events!</div>
+      <div class="weekly-events-header hidden-xs col-sm-3">
+        Weekly<br />Events!
+      </div>
 
-        <app-calendar-day [dayText]="'S'"></app-calendar-day>
-        <app-calendar-day [dayText]="'M'"></app-calendar-day>
-        <app-calendar-day [dayText]="'T'"></app-calendar-day>
-        <app-calendar-day [dayText]="'W'"></app-calendar-day>
-        <app-calendar-day [dayText]="'T'"></app-calendar-day>
-        <app-calendar-day [dayText]="'F'"></app-calendar-day>
-        <app-calendar-day [dayText]="'S'"></app-calendar-day>
+      <app-calendar-day [dayText]="'S'"></app-calendar-day>
+      <app-calendar-day [dayText]="'M'"></app-calendar-day>
+      <app-calendar-day [dayText]="'T'"></app-calendar-day>
+      <app-calendar-day [dayText]="'W'"></app-calendar-day>
+      <app-calendar-day [dayText]="'T'"></app-calendar-day>
+      <app-calendar-day [dayText]="'F'"></app-calendar-day>
+      <app-calendar-day [dayText]="'S'"></app-calendar-day>
     </div>
     <div class="row">
-        <app-weekly-event></app-weekly-event>
-        <app-weekly-event [isActive]="true" [mondayActive]="true" [eventName]="'RBG Nog Run!'" [calText]="'NOG RUN!'" [eventImage]="'../../../assets/images/nog_run.jpg'" [eventText]="'Join us for our weekly nog run club meetup! The Nog Run Club is a 501(c)3 nonprofit organization, and is dedicated to promoting charity and charitable awareness among runners and walkers of all abilities in the Triangle. '" [whenText]="'Mondays @ 6:15 pm'" [locationText]="'Raleigh Beer Garden'"></app-weekly-event>
-        <app-weekly-event></app-weekly-event>
-        <app-weekly-event [isActive]="true" [wednesdayActive]="true" [eventName]="'Growler Wednesdays!'" [calText]="'GROWLER WEDS!'" [eventImage]="'../../../assets/images/growler_weds.gif'" [eventText]="" [whenText]="'Wednesdays all day!'" [locationText]="'Raleigh Beer Garden'"></app-weekly-event>
-        <app-weekly-event></app-weekly-event>
-        <app-weekly-event></app-weekly-event>
-        <app-weekly-event></app-weekly-event>
+      <app-weekly-event></app-weekly-event>
+      <app-weekly-event
+        [isActive]="true"
+        [mondayActive]="true"
+        [eventName]="'RBG Nog Run!'"
+        [calText]="'NOG RUN!'"
+        [eventImage]="'../../../assets/images/nog_run.jpg'"
+        [eventText]="
+          'Join us for our weekly nog run club meetup! The Nog Run Club is a 501(c)3 nonprofit organization, and is dedicated to promoting charity and charitable awareness among runners and walkers of all abilities in the Triangle. '
+        "
+        [whenText]="'Mondays @ 6:15 pm'"
+        [locationText]="'Raleigh Beer Garden'"
+      ></app-weekly-event>
+      <app-weekly-event></app-weekly-event>
+      <app-weekly-event
+        [isActive]="true"
+        [wednesdayActive]="true"
+        [eventName]="'Growler Wednesdays!'"
+        [calText]="'GROWLER WEDS!'"
+        [eventImage]="'../../../assets/images/growler_weds.gif'"
+        [eventText]=""
+        [whenText]="'Wednesdays all day!'"
+        [locationText]="'Raleigh Beer Garden'"
+      ></app-weekly-event>
+      <app-weekly-event></app-weekly-event>
+      <app-weekly-event></app-weekly-event>
+      <app-weekly-event></app-weekly-event>
     </div>
     <div class="row">
-        <app-day [dayNumber]="'29'" [monthCurrent]="false"></app-day>
-        <app-day [dayNumber]="'30'" [monthCurrent]="false"></app-day>
-        <app-day [dayNumber]="'1'"></app-day>
-        <app-day [dayNumber]="'2'"></app-day>
-        <app-day [dayNumber]="'3'"></app-day>
-        <app-day [dayNumber]="'4'"></app-day>
-        <app-day [dayNumber]="'5'"></app-day>
+      <app-day [dayNumber]="'29'" [monthCurrent]="false"></app-day>
+      <app-day [dayNumber]="'30'" [monthCurrent]="false"></app-day>
+      <app-day [dayNumber]="'1'"></app-day>
+      <app-day [dayNumber]="'2'"></app-day>
+      <app-day [dayNumber]="'3'"></app-day>
+      <app-day [dayNumber]="'4'"></app-day>
+      <app-day [dayNumber]="'5'"></app-day>
     </div>
     <div class="row">
-        <app-day [dayNumber]="'6'"></app-day>
-        <app-day [dayNumber]="'7'"></app-day>
-        <app-day [dayNumber]="'8'"></app-day>
-        <app-day [dayNumber]="'9'"></app-day>
-        <app-day [dayNumber]="'10'"></app-day>
-        <app-day [dayNumber]="'11'"></app-day>
-        <app-day [dayNumber]="'12'"></app-day>
+      <app-day [dayNumber]="'6'"></app-day>
+      <app-day [dayNumber]="'7'"></app-day>
+      <app-day [dayNumber]="'8'"></app-day>
+      <app-day [dayNumber]="'9'"></app-day>
+      <app-day [dayNumber]="'10'"></app-day>
+      <app-day [dayNumber]="'11'"></app-day>
+      <app-day [dayNumber]="'12'"></app-day>
     </div>
     <div class="row">
-        <app-day [dayNumber]="'13'"></app-day>
-        <app-day [dayNumber]="'14'"></app-day>
-        <app-day [dayNumber]="'15'" [eventName]="'Growler Unveil'" [calText]="'GROWLER UNVEIL'" [isActive]="true" [event2Active]="true" [eventImage]="'assets/images/growlers_blackandwhite.jpg'" [eventText]="'Limited Edition Growler Unveil! Join us in the Raleigh Beer Garden Event Tent to get a chance to purchase the first batch!'" [whenText]="'Tuesday, December 15, 2017 - 6:00 pm - 7:00 pm'" [locationText]="'RBG Event Tent'"></app-day>    
-        <app-day [dayNumber]="'16'"></app-day>
-        <app-day [dayNumber]="'17'" [eventName]="'St. Pattys Day Party!'" [calText]="'ST PATTYS PARTY'" [isActive]="true" [event4Active]="true" [eventImage]="'assets/images/st-patricks-day.jpg'" [eventText]="'St. Pattys Day Lets Gooooo'" [whenText]="'Tuesday, December 15, 2017 - 6:00 pm - 7:00 pm'" [locationText]="'RBG Event Tent'"></app-day>
-        <app-day [dayNumber]="'18'"></app-day>
-        <app-day [dayNumber]="'19'"></app-day>
+      <app-day [dayNumber]="'13'"></app-day>
+      <app-day [dayNumber]="'14'"></app-day>
+      <app-day
+        [dayNumber]="'15'"
+        [eventName]="'Growler Unveil'"
+        [calText]="'GROWLER UNVEIL'"
+        [isActive]="true"
+        [event2Active]="true"
+        [eventImage]="'assets/images/growlers_blackandwhite.jpg'"
+        [eventText]="
+          'Limited Edition Growler Unveil! Join us in the Raleigh Beer Garden Event Tent to get a chance to purchase the first batch!'
+        "
+        [whenText]="'Tuesday, December 15, 2017 - 6:00 pm - 7:00 pm'"
+        [locationText]="'RBG Event Tent'"
+      ></app-day>
+      <app-day [dayNumber]="'16'"></app-day>
+      <app-day
+        [dayNumber]="'17'"
+        [eventName]="'St. Pattys Day Party!'"
+        [calText]="'ST PATTYS PARTY'"
+        [isActive]="true"
+        [event4Active]="true"
+        [eventImage]="'assets/images/st-patricks-day.jpg'"
+        [eventText]="'St. Pattys Day Lets Gooooo'"
+        [whenText]="'Tuesday, December 15, 2017 - 6:00 pm - 7:00 pm'"
+        [locationText]="'RBG Event Tent'"
+      ></app-day>
+      <app-day [dayNumber]="'18'"></app-day>
+      <app-day [dayNumber]="'19'"></app-day>
     </div>
     <div class="row">
-        <app-day [dayNumber]="'20'"></app-day>
-        <app-day [dayNumber]="'21'"></app-day>
-        <app-day [dayNumber]="'22'"></app-day>
-        <app-day [dayNumber]="'23'"></app-day>
-        <app-day [dayNumber]="'24'"></app-day>
-        <app-day [dayNumber]="'25'"></app-day>
-        <app-day [dayNumber]="'26'"></app-day>
+      <app-day [dayNumber]="'20'"></app-day>
+      <app-day [dayNumber]="'21'"></app-day>
+      <app-day [dayNumber]="'22'"></app-day>
+      <app-day [dayNumber]="'23'"></app-day>
+      <app-day [dayNumber]="'24'"></app-day>
+      <app-day [dayNumber]="'25'"></app-day>
+      <app-day [dayNumber]="'26'"></app-day>
     </div>
     <div class="row">
-        <app-day [dayNumber]="'27'"></app-day>
-        <app-day [dayNumber]="'28'"></app-day>
-        <app-day [dayNumber]="'29'"></app-day>
-        <app-day [dayNumber]="'30'"></app-day>
-        <app-day [dayNumber]="'31'"></app-day>
-        <app-day [dayNumber]="'1'" [monthCurrent]="false"></app-day>
-        <app-day [dayNumber]="'2'"  [monthCurrent]="false"></app-day>
+      <app-day [dayNumber]="'27'"></app-day>
+      <app-day [dayNumber]="'28'"></app-day>
+      <app-day [dayNumber]="'29'"></app-day>
+      <app-day [dayNumber]="'30'"></app-day>
+      <app-day [dayNumber]="'31'"></app-day>
+      <app-day [dayNumber]="'1'" [monthCurrent]="false"></app-day>
+      <app-day [dayNumber]="'2'" [monthCurrent]="false"></app-day>
     </div>
-
   </div>
-  
-
 </div>

@@ -52,8 +52,10 @@ body {
   background-position: center;
 }
 
-.fixed-image {
-  background-attachment: fixed;
+@supports (background-attachment: fixed) {
+  .fixed-image {
+    background-attachment: fixed;
+  }
 }
 
 a:hover {
