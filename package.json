@@ -27,7 +27,7 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "date-fns": "^1.29.0",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "jquery-parallax.js": "^1.5.0",
     "ng-datepicker": "^1.0.2",
     "ng2-datepicker": "^2.1.6",
